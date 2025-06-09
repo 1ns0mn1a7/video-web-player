@@ -160,3 +160,4 @@ cython_debug/
 .idea/
 .venv
 /video-player-jslib/
+.DS_Store
