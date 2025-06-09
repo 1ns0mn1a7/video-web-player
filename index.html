@@ -10,15 +10,19 @@
     width: 800px;
     height: 600px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
   }
 
   .js-video-container {
-    width: 100%;
-    height: 100%;
+    flex-grow: 1;
+    background: black;
   }
+
   .player-bar {
     background: black;
-    }
+    display: flex;
+  }
 
   .js-play-button,
   .js-pause-button {
@@ -45,19 +49,19 @@
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
 
-        <button class="js-volume-button">Volume</button>
-        <button class="js-mute-button" hidden>Mute</button>
-        <button class="js-fullscreen-button">Fullscreen</button>
-      </div>
+<!--        <button class="js-volume-button">Volume</button>-->
+<!--        <button class="js-mute-button" hidden>Mute</button>-->
+<!--        <button class="js-fullscreen-button">Fullscreen</button>-->
+<!--      </div>-->
 
-      <div>
-        <span class="js-current-time"></span>
-        <span class="js-duration"></span>
-      </div>
+<!--      <div>-->
+<!--        <span class="js-current-time"></span>-->
+<!--        <span class="js-duration"></span>-->
+<!--      </div>-->
 
-      <div class="js-progress">
-        <div class="js-progress-slider">Прогресс</div>
-      </div>
+<!--      <div class="js-progress">-->
+<!--        <div class="js-progress-slider">Прогресс</div>-->
+<!--      </div>-->
     </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
