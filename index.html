@@ -4,18 +4,44 @@
   <title>Web Player</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+  <style>
+  #player {
+    width: 800px;
+    height: 600px;
+  }
+
+  .js-video-container {
+    width: 100%;
+    height: 100%;
+  }
+  .player-bar {
+    background: black;
+    }
+
+  .js-play-button,
+  .js-pause-button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+    background: transparent;
+  }
+</style>
+
 </head>
 <body>
-    <div id="player" style="width: 800px; height: 600px;">
-      <div class="js-video-container" style="width: 100%; height: 100%"></div>
+    <div id="player">
+      <div class="js-video-container"></div>
 
-      <div style="background: black;">
-        <button class="js-play-button" hidden style="border: none; cursor: pointer; background: transparent; color: white;">
-          <i class="fa fa-play" aria-hidden="true" style="margin: 10px;" ></i>
+
+      <div class="player-bar">
+        <button class="js-play-button" hidden>
+          <i class="fa fa-play" aria-hidden="true"></i>
         </button>
 
-        <button class="js-pause-button" hidden style="border: none; cursor: pointer; background: transparent; color: white;">
-          <i class="fa fa-pause" aria-hidden="true" style="margin: 10px;" ></i>
+        <button class="js-pause-button" hidden>
+          <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
 
         <button class="js-volume-button">Volume</button>
@@ -23,14 +49,13 @@
         <button class="js-fullscreen-button">Fullscreen</button>
       </div>
 
-      <div style="color: white;">
+      <div>
         <span class="js-current-time"></span>
-        —
         <span class="js-duration"></span>
       </div>
 
-      <div class="js-progress" style="background-color: grey;">
-        <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
+      <div class="js-progress">
+        <div class="js-progress-slider">Прогресс</div>
       </div>
     </div>
 
