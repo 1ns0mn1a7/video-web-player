@@ -15,7 +15,7 @@
     flex-direction: column;
   }
 
-  .js-video-container {
+  .video-container {
     flex-grow: 1;
     background: black;
   }
@@ -25,11 +25,7 @@
     display: flex;
   }
 
-  .js-play-button,
-  .js-pause-button,
-  .js-volume-button,
-  .js-mute-button,
-  .js-fullscreen-button {
+  .control-button {
     border: none;
     cursor: pointer;
     color: white;
@@ -50,29 +46,28 @@
 </head>
 <body>
     <div id="player">
-      <div class="js-video-container"></div>
-
+      <div class="js-video-container video-container"></div>
 
       <div class="player-bar">
-        <button class="js-play-button" hidden>
+        <button class="js-play-button control-button" hidden>
           <i class="fa fa-play" aria-hidden="true"></i>
         </button>
 
-        <button class="js-pause-button" hidden>
+        <button class="js-pause-button control-button" hidden>
           <i class="fa fa-pause" aria-hidden="true"></i>
         </button>
 
-        <button class="js-volume-button">
+        <button class="js-volume-button control-button">
           <i class="fa fa-volume-off" aria-hidden="true"></i>
         </button>
 
-        <button class="js-mute-button" hidden>
+        <button class="js-mute-button control-button" hidden>
           <i class="fa fa-volume-up" aria-hidden="true"></i>
         </button>
 
         <div class="spacer"></div>
 
-        <button class="js-fullscreen-button">
+        <button class="js-fullscreen-button control-button">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
