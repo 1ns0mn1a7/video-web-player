@@ -29,17 +29,26 @@
     border: none;
     cursor: pointer;
     color: white;
-    margin: 5px;
-    margin-right: 10px;
+    margin: 9px 5px;
     background: transparent;
     font-size: larger;
     width: 24px;
     height: 24px;
   }
 
+  .fullscreen-button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    font-size: larger;
+    margin-right: 4px
+  }
+
   .spacer {
     flex-grow: 1;
   }
+
 
 </style>
 
@@ -67,7 +76,7 @@
 
         <div class="spacer"></div>
 
-        <button class="js-fullscreen-button control-button">
+        <button class="js-fullscreen-button fullscreen-button">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
